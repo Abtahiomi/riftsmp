@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RIFT SMP - Professional Minecraft Server. Join now: riftsmp.fun" />
+  <title>RIFT SMP | Minecraft Server</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <img src="assets/logo.jpg" alt="RIFT SMP logo" class="logo-img" />
+        <span class="logo-text">RIFT<span class="logo-accent">SMP</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="https://discord.gg/FycpnfvW" class="nav-link" target="_blank" rel="noopener">Discord</a>
+        <a href="https://www.youtube.com/@riftsmp-fun" class="nav-link" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+      <a
+        href="https://discord.gg/FycpnfvW"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary btn-nav"
+        >Join Discord</a
+      >
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <img src="assets/logo.jpg" alt="RIFT SMP logo" class="hero-logo" />
+      <p class="hero-tag">🎮 Professional Minecraft Server</p>
+      <h1 class="hero-title">
+        RIFT<span class="hero-title-accent"> SMP</span>
+      </h1>
+      <p class="hero-subtitle">
+        Enter the rift. Build, survive and conquer in a community-powered SMP
+        experience like no other.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-copy" id="copyIpBtn">
+          <span class="ip-text">riftsmp.fun</span>
+          <span class="copy-label">📋 Copy IP</span>
+        </button>
+        <a
+          href="https://www.youtube.com/@riftsmp-fun"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-ghost"
+          >▶ Watch on YouTube</a
+        >
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Uptime</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">🔥</span>
+          <span class="stat-label">Active Community</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">⚡</span>
+          <span class="stat-label">Great Performance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-eyebrow">Who we are</p>
+      <h2 class="section-title">Enter The <span class="accent">Rift</span></h2>
+      <p class="section-desc">
+        RIFT SMP is a survival multiplayer server built for players who love
+        adventure, community and progress. Join our Discord to connect with the
+        community, stay updated with events, and get direct support whenever you
+        need it.
+      </p>
+      <div class="feature-grid">
+        <div class="feature-card glass">
+          <span class="feature-icon">🌍</span>
+          <h3>Survival SMP</h3>
+          <p>Classic survival with a fresh economy, land claims and fun gameplay.</p>
+        </div>
+        <div class="feature-card glass">
+          <span class="feature-icon">💰</span>
+          <h3>Economy &amp; Shop</h3>
+          <p>Trade, earn and rank up. Boost your adventure with ranks &amp; money packs.</p>
+        </div>
+        <div class="feature-card glass">
+          <span class="feature-icon">🤝</span>
+          <h3>Friendly Community</h3>
+          <p>Active staff and players. Your feedback shapes the server.</p>
+        </div>
+        <div class="feature-card glass">
+          <span class="feature-icon">🚀</span>
+          <h3>Always Growing</h3>
+          <p>Constant updates, events and seasonal content keep it fresh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP ===== -->
+  <section id="shop" class="section section-shop">
+    <div class="container">
+      <p class="section-eyebrow">Support the server</p>
+      <h2 class="section-title">Server <span class="accent">Shop</span></h2>
+      <p class="section-desc">
+        Unlock exclusive perks and power up your journey. All prices are in
+        <strong>TK</strong>. Payments are handled via our Discord.
+      </p>
+
+      <div class="shop-tabs">
+        <button class="shop-tab active" data-tab="ranks">👑 Ranks</button>
+        <button class="shop-tab" data-tab="money">💰 Money</button>
+      </div>
+
+      <!-- RANKS -->
+      <div class="shop-grid" id="tab-ranks">
+        <div class="shop-card glass rank-card">
+          <span class="rank-badge">👑</span>
+          <h3 class="rank-name">PHANTOM</h3>
+          <p class="rank-desc">Entry-level perks to get you started.</p>
+          <p class="rank-price"><span class="price-num">50</span> TK</p>
+          <button class="btn btn-buy" data-item="PHANTOM Rank - 50 TK">Buy on Discord</button>
+        </div>
+        <div class="shop-card glass rank-card featured">
+          <div class="ribbon">Popular</div>
+          <span class="rank-badge">🌑</span>
+          <h3 class="rank-name">SHADOW</h3>
+          <p class="rank-desc">Nice perks with stronger progression.</p>
+          <p class="rank-price"><span class="price-num">100</span> TK</p>
+          <button class="btn btn-buy" data-item="SHADOW Rank - 100 TK">Buy on Discord</button>
+        </div>
+        <div class="shop-card glass rank-card">
+          <span class="rank-badge">😈</span>
+          <h3 class="rank-name">DEMON</h3>
+          <p class="rank-desc">Heavy perks for dedicated players.</p>
+          <p class="rank-price"><span class="price-num">200</span> TK</p>
+          <button class="btn btn-buy" data-item="DEMON Rank - 200 TK">Buy on Discord</button>
+        </div>
+        <div class="shop-card glass rank-card">
+          <span class="rank-badge">✨</span>
+          <h3 class="rank-name">COSMIC</h3>
+          <p class="rank-desc">The ultimate RIFT experience. Best perks.</p>
+          <p class="rank-price"><span class="price-num">300</span> TK</p>
+          <button class="btn btn-buy" data-item="COSMIC Rank - 300 TK">Buy on Discord</button>
+        </div>
+      </div>
+
+      <!-- MONEY -->
+      <div class="shop-grid hidden" id="tab-money">
+        <div class="shop-card glass money-card">
+          <span class="rank-badge">💵</span>
+          <h3 class="rank-name">100M Money</h3>
+          <p class="rank-desc">One hundred million in-game money.</p>
+          <p class="rank-price"><span class="price-num">50</span> TK</p>
+          <button class="btn btn-buy" data-item="100M Money - 50 TK">Buy on Discord</button>
+        </div>
+        <div class="shop-card glass money-card featured">
+          <div class="ribbon">Best Value</div>
+          <span class="rank-badge">💸</span>
+          <h3 class="rank-name">250M Money</h3>
+          <p class="rank-desc">Two hundred fifty million in-game money.</p>
+          <p class="rank-price"><span class="price-num">100</span> TK</p>
+          <button class="btn btn-buy" data-item="250M Money - 100 TK">Buy on Discord</button>
+        </div>
+        <div class="shop-card glass money-card">
+          <span class="rank-badge">🏦</span>
+          <h3 class="rank-name">1B Money</h3>
+          <p class="rank-desc">One billion in-game money.</p>
+          <p class="rank-price"><span class="price-num">300</span> TK</p>
+          <button class="btn btn-buy" data-item="1B Money - 300 TK">Buy on Discord</button>
+        </div>
+        <div class="shop-card glass money-card">
+          <span class="rank-badge">💰</span>
+          <h3 class="rank-name">10B Money</h3>
+          <p class="rank-desc">Ten billion in-game money. Big flex.</p>
+          <p class="rank-price"><span class="price-num">500</span> TK</p>
+          <button class="btn btn-buy" data-item="10B Money - 500 TK">Buy on Discord</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL / COMMUNITY ===== -->
+  <section id="discord" class="section section-social">
+    <div class="container social-inner">
+      <p class="section-eyebrow">Stay connected</p>
+      <h2 class="section-title">Join Our <span class="accent">Community</span></h2>
+      <p class="section-desc">
+        Get support, see announcements, and hang out with other players.
+      </p>
+      <div class="social-buttons">
+        <a
+          href="https://discord.gg/FycpnfvW"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-discord"
+        >
+          <span class="social-icon discord-icon"></span>
+          Join Discord
+        </a>
+        <a
+          href="https://www.youtube.com/@riftsmp-fun"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-youtube"
+        >
+          ▶ Subscribe on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-line">
+          <img src="assets/logo.jpg" alt="RIFT SMP logo" class="footer-logo" />
+          <span class="logo-text">RIFT<span class="logo-accent">SMP</span></span>
+        </div>
+        <p>Play now at <button class="footer-ip" id="footerCopyIp">riftsmp.fun</button></p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="https://discord.gg/FycpnfvW" target="_blank" rel="noopener">Discord</a>
+        <a href="https://www.youtube.com/@riftsmp-fun" target="_blank" rel="noopener">YouTube</a>
+      </div>
+      <p class="footer-copy">
+        © <span id="year"></span> RIFT SMP. Not affiliated with Mojang or Microsoft.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
